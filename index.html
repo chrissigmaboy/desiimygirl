@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For Someone Special</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 50px;
+    }
+
+    .section {
+      margin: 60px 0;
+      padding: 20px;
+      border: 2px solid red;
+      border-radius: 10px;
+      background: rgba(255, 0, 0, 0.1);
+    }
+
+    h1, h2 {
+      color: red;
+    }
+
+    .highlight {
+      color: #ff4d4d;
+      font-weight: bold;
+    }
+
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 3s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    .song {
+      margin-top: 20px;
+    }
+
+    .button {
+      margin-top: 30px;
+      padding: 15px 30px;
+      background-color: red;
+      color: white;
+      font-size: 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Hey You!</h1>
+
+  <div class="section fade-in">
+    <h2>Your Favorite Color is Red</h2>
+    <p>So I wrapped this page in it—just for you.</p>
+  </div>
+
+  <div class="section fade-in" style="animation-delay: 1s;">
+    <h2>You Like Coloring</h2>
+    <p>I love how creative you are. It's one of the many things that make you special.</p>
+  </div>
+
+  <div class="section fade-in" style="animation-delay: 2s;">
+    <h2>Egyptian Vultures</h2>
+    <p>They're smart, unique, and beautiful. Just like someone I know.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Egyptian_vulture.jpg" alt="Egyptian Vulture" width="300" style="border-radius: 10px; margin-top: 10px;">
+  </div>
+
+  <div class="section fade-in" style="animation-delay: 3s;">
+    <h2>Your Favorite Song</h2>
+    <p><em>"Everyone Wants You" by Jeff Buckley</em></p>
+    <div class="song">
+      <iframe width="300" height="80" src="https://www.youtube.com/watch?v=nrMwgTc69y4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <!-- Replace YOUTUBE_VIDEO_ID_HERE with the actual video ID -->
+    </div>
+  </div>
+
+  <div class="section fade-in" style="animation-delay: 4s;">
+    <h2>You Said My Face is Your Favorite Part of Me</h2>
+    <p>That meant a lot to me. Thank you.</p>
+  </div>
+
+  <div class="section fade-in" style="animation-delay: 5s;">
+    <h2>So I Have One Question...</h2>
+    <button class="button" onclick="ask()">Will You Be My Girlfriend?</button>
+  </div>
+
+  <script>
+    function ask() {
+      alert("Will you be my girlfriend?");
+    }
+  </script>
+
+</body>
+</html>
